@@ -17,11 +17,13 @@ knitr::opts_chunk$set(message=FALSE,warning=FALSE, cache=TRUE)
 
 Last compiled: `r Sys.Date()`
 
-# Chapter 1
-### Data Visualization with ggplot2
+# Chapter 3
+### Data Visualization
 
 Last compiled: `r Sys.Date()`
 
+
+### 3.2.4 Exercises
 
 1. Run `ggplot(data = mpg)`. What do you see?
 ```{r}
@@ -52,14 +54,14 @@ find out.
 `drv` is the type of drive train, where f = front-wheel drive, r = rear wheel drive, 4 = 4wd.
 
 
-4. Make a scatterplot of `hwy` versus `cyl`.
+4. Make a scatterplot of `hwy` vs `cyl`.
 ```{r}
 ggplot(mpg, aes(x = cyl, y = hwy)) +
   geom_point()
 ```
 
 
-5. What happens if you make a scatterplot of `class` versus `drv`?
+5. What happens if you make a scatterplot of `class` vs `drv`?
 Why is the plot not useful?
 ```{r}
 ggplot(mpg, aes(x = class, y = drv)) +
